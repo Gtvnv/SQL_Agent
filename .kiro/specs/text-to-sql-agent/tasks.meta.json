@@ -1,0 +1,970 @@
+{
+  "pbtResults": {
+    "1.5 Property 17: Chave de API ausente ou em branco impede a inicialização": {
+      "status": "passed",
+      "lastRunTimestamp": 1794932431078
+    },
+    "1.3 Property 13: Configuração numérica inválida usa o padrão": {
+      "status": "passed",
+      "lastRunTimestamp": 1794932737330
+    },
+    "1.4 Property 16: Variável de ambiente prevalece sobre o `.env`": {
+      "status": "passed",
+      "lastRunTimestamp": 1794932824975
+    },
+    "1.6 Property 18: A chave de API nunca aparece nas saídas": {
+      "status": "passed",
+      "lastRunTimestamp": 1794932949885
+    },
+    "3.2 Property 3: Extração de esquema é completa e fiel": {
+      "status": "passed",
+      "lastRunTimestamp": 1794933958747
+    },
+    "4.4 Property 6: Extração de SQL de bloco Markdown é inversa da formatação": {
+      "status": "passed",
+      "lastRunTimestamp": 1794941485384
+    },
+    "4.5 Property 7: Respostas sem SQL única são rejeitadas": {
+      "status": "passed",
+      "lastRunTimestamp": 1794941587094
+    },
+    "4.3 Property 4: O prompt contém todo o contexto configurado": {
+      "status": "passed",
+      "lastRunTimestamp": 1794942117100
+    },
+    "5.5 Property 11: Referências inexistentes ao esquema são rejeitadas": {
+      "status": "passed",
+      "lastRunTimestamp": 1794942380188
+    },
+    "5.4 Property 10: Múltiplas instruções são rejeitadas": {
+      "status": "passed",
+      "lastRunTimestamp": 1794942433655
+    },
+    "5.2 Property 8: Consultas de leitura válidas são aprovadas": {
+      "status": "passed",
+      "lastRunTimestamp": 1794942741446
+    },
+    "5.3 Property 9: Instruções de escrita ou definição são rejeitadas": {
+      "status": "passed",
+      "lastRunTimestamp": 1794946923145
+    },
+    "6.2 Property 15: Limite de exibição e aviso de truncamento": {
+      "status": "passed",
+      "lastRunTimestamp": 1794947700334
+    },
+    "7.3 Property 22: Truncamento de textos respeita os limites e sinaliza": {
+      "status": "passed",
+      "lastRunTimestamp": 1794947998059
+    },
+    "9.4 Property 21: Uma pergunta gera exatamente um registro de auditoria": {
+      "status": "passed",
+      "lastRunTimestamp": 1794948195470
+    },
+    "9.2 Property 12: Autocorreção respeita o limite e para no primeiro sucesso": {
+      "status": "passed",
+      "lastRunTimestamp": 1794948242053
+    },
+    "9.3 Property 2: Falhas por pergunta não encerram a sessão": {
+      "status": "passed",
+      "lastRunTimestamp": 1794948383686
+    },
+    "11.3 Property 19: Comparação de resultados na avaliação": {
+      "status": "passed",
+      "lastRunTimestamp": 1794948721743
+    },
+    "10.2 Property 1: Entrada inválida é rejeitada sem acionar o LLM": {
+      "status": "passed",
+      "lastRunTimestamp": 1794948760128
+    },
+    "10.3 Property 14: Renderização de tabela preserva colunas e linhas": {
+      "status": "passed",
+      "lastRunTimestamp": 1794948768910
+    },
+    "11.4 Property 20: Relatório de avaliação é consistente e resiliente a falhas": {
+      "status": "passed",
+      "lastRunTimestamp": 1794948793576
+    }
+  },
+  "executionHistory": {
+    "1.1 Criar a estrutura base do repositório": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930732375
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930812371
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931037968
+      }
+    ],
+    "1.2 Implementar `config.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930734598
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931047048
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931461956
+      }
+    ],
+    "1.3 Property 13: Configuração numérica inválida usa o padrão": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930738300
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794932305367
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794933015802
+      }
+    ],
+    "1.4 Property 16: Variável de ambiente prevalece sobre o `.env`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930742415
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794932306483
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794933031451
+      }
+    ],
+    "1.5 Property 17: Chave de API ausente ou em branco impede a inicialização": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930746281
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794932306950
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794933037485
+      }
+    ],
+    "1.6 Property 18: A chave de API nunca aparece nas saídas": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930749509
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794932307729
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794933044727
+      }
+    ],
+    "1.7 Escrever testes unitários da configuração": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930751658
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794932308794
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794933047044
+      }
+    ],
+    "2.1 Implementar `db/create_db.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930752227
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931049510
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931462342
+      }
+    ],
+    "2.2 Escrever testes do `create_db.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930753393
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794933066525
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794938532817
+      }
+    ],
+    "2.3 Criar `db/schema_descriptions.yaml` e `db/few_shot.yaml`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930755382
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931050367
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931463824
+      }
+    ],
+    "3.1 Implementar `schema.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930757932
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931052081
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931464440
+      }
+    ],
+    "3.2 Property 3: Extração de esquema é completa e fiel": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930759063
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794933064647
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794938533240
+      }
+    ],
+    "3.3 Property 5: Descrições de itens inexistentes são ignoradas com aviso": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930759528
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794933081466
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794938529692
+      }
+    ],
+    "3.4 Escrever testes unitários do Extrator_Esquema": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930760209
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794938534383
+      }
+    ],
+    "4.1 Implementar `llm.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930761060
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931056250
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931464892
+      }
+    ],
+    "4.2 Implementar `generator.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930762461
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931470438
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794932292117
+      }
+    ],
+    "4.3 Property 4: O prompt contém todo o contexto configurado": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930763664
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794942136191
+      }
+    ],
+    "4.4 Property 6: Extração de SQL de bloco Markdown é inversa da formatação": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930764263
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794938544631
+      }
+    ],
+    "4.5 Property 7: Respostas sem SQL única são rejeitadas": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930765160
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794938545045
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794941875198
+      }
+    ],
+    "4.6 Escrever testes unitários da extração de SQL": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930767360
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794938545657
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794941880130
+      }
+    ],
+    "5.1 Implementar `validator.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930768513
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931470894
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794932295335
+      }
+    ],
+    "5.2 Property 8: Consultas de leitura válidas são aprovadas": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930770878
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794942148097
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794947057566
+      }
+    ],
+    "5.3 Property 9: Instruções de escrita ou definição são rejeitadas": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930772092
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794942146147
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794947053003
+      }
+    ],
+    "5.4 Property 10: Múltiplas instruções são rejeitadas": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930773220
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794942149628
+      }
+    ],
+    "5.5 Property 11: Referências inexistentes ao esquema são rejeitadas": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930774780
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794942151885
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794947061766
+      }
+    ],
+    "5.6 Escrever testes unitários do Validador_SQL": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930776592
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794942152294
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794947069466
+      }
+    ],
+    "6.1 Implementar `executor.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930777592
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931471541
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794932296315
+      }
+    ],
+    "6.2 Property 15: Limite de exibição e aviso de truncamento": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930778529
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794947260440
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948009375
+      }
+    ],
+    "6.3 Escrever testes unitários do Executor_SQL": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930781130
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794947279038
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948009834
+      }
+    ],
+    "7.1 Implementar `explainer.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930782794
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931472040
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794932296772
+      }
+    ],
+    "7.2 Implementar `audit.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930783910
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794931472410
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794932297629
+      }
+    ],
+    "7.3 Property 22: Truncamento de textos respeita os limites e sinaliza": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930786046
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794947334850
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948010767
+      }
+    ],
+    "7.4 Escrever testes unitários do Explicador e da auditoria": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930786597
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948011830
+      }
+    ],
+    "8. Checkpoint - Componentes isolados": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930787829
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794949427134
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794949527655
+      }
+    ],
+    "9.1 Implementar `agent.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930788894
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794938543697
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794941885878
+      }
+    ],
+    "9.2 Property 12: Autocorreção respeita o limite e para no primeiro sucesso": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930790181
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948023726
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948397430
+      }
+    ],
+    "9.3 Property 2: Falhas por pergunta não encerram a sessão": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930791775
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948026080
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948398909
+      }
+    ],
+    "9.4 Property 21: Uma pergunta gera exatamente um registro de auditoria": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930792870
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948026750
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948399493
+      }
+    ],
+    "9.5 Escrever testes de exemplo do Agente": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930793841
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948027550
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948400554
+      }
+    ],
+    "10.1 Implementar `cli.py` e `__main__.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930794832
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948028179
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948401695
+      }
+    ],
+    "10.2 Property 1: Entrada inválida é rejeitada sem acionar o LLM": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930796079
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948623417
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948810899
+      }
+    ],
+    "10.3 Property 14: Renderização de tabela preserva colunas e linhas": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930797022
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948625086
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948807721
+      }
+    ],
+    "10.4 Escrever testes de exemplo da CLI": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930798195
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948626103
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948803387
+      }
+    ],
+    "11.1 Implementar `evaluation.py`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930798663
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948412710
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948616848
+      }
+    ],
+    "11.2 Criar `eval/dataset.yaml`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930799406
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794933094846
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794938532182
+      }
+    ],
+    "11.3 Property 19: Comparação de resultados na avaliação": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930800541
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948627190
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948806952
+      }
+    ],
+    "11.4 Property 20: Relatório de avaliação é consistente e resiliente a falhas": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930801219
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948627849
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948809800
+      }
+    ],
+    "11.5 Escrever teste de fumaça do Conjunto_Avaliação": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930801676
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794947345215
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948012650
+      }
+    ],
+    "12. Checkpoint - Sistema integrado": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930802226
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794949533829
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794949537587
+      }
+    ],
+    "13.1 Escrever README.md e documentos em `/docs`": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930803111
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794948816623
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794949356709
+      }
+    ],
+    "13.2 Escrever testes de fumaça da documentação": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930804491
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794949360783
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794949422004
+      }
+    ],
+    "14. Final checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794930805004
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794949540933
+      },
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794949544349
+      }
+    ],
+    "2. Banco de exemplo e arquivos de contexto": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794938534763
+      }
+    ],
+    "4. Cliente LLM e Gerador_SQL": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794942136709
+      }
+    ],
+    "13. Documentação do repositório": [
+      {
+        "executionId": "3dfaaa61-5d88-4a50-b7a3-f70ba886e04a",
+        "chatSessionId": "sess_047c393e-cc3c-4ecd-9794-759158aab416",
+        "timestamp": 1794949423141
+      }
+    ]
+  }
+}

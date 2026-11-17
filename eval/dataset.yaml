@@ -1,0 +1,84 @@
+# Conjunto_Avaliação: lista de {pergunta, sql_esperada, categoria}.
+# Categorias: filtros, agregacoes, juncoes, ordenacao, agrupamento.
+
+# --- filtros ---
+- categoria: filtros
+  pergunta: Quais clientes moram em Curitiba?
+  sql_esperada: "SELECT nome FROM clientes WHERE cidade = 'Curitiba'"
+
+- categoria: filtros
+  pergunta: Quais produtos custam mais de 1000 reais?
+  sql_esperada: "SELECT nome, preco FROM produtos WHERE preco > 1000"
+
+- categoria: filtros
+  pergunta: Quais pedidos estão com status cancelado?
+  sql_esperada: "SELECT id, cliente_id, data_pedido FROM pedidos WHERE status = 'cancelado'"
+
+- categoria: filtros
+  pergunta: Quais funcionários têm o cargo de Gerente?
+  sql_esperada: "SELECT nome FROM funcionarios WHERE cargo = 'Gerente'"
+
+# --- agregacoes ---
+- categoria: agregacoes
+  pergunta: Quantos clientes existem?
+  sql_esperada: "SELECT COUNT(*) FROM clientes"
+
+- categoria: agregacoes
+  pergunta: Qual é o preço médio dos produtos?
+  sql_esperada: "SELECT AVG(preco) FROM produtos"
+
+- categoria: agregacoes
+  pergunta: Qual é o maior preço entre os produtos?
+  sql_esperada: "SELECT MAX(preco) FROM produtos"
+
+- categoria: agregacoes
+  pergunta: Qual é o total de unidades vendidas nos itens de pedido?
+  sql_esperada: "SELECT SUM(quantidade) FROM itens_pedido"
+
+# --- juncoes ---
+- categoria: juncoes
+  pergunta: Liste o nome de cada produto com o nome da sua categoria.
+  sql_esperada: >-
+    SELECT p.nome, c.nome FROM produtos p
+    JOIN categorias c ON c.id = p.categoria_id
+
+- categoria: juncoes
+  pergunta: Liste o id de cada pedido com o nome do cliente que o fez.
+  sql_esperada: >-
+    SELECT p.id, c.nome FROM pedidos p
+    JOIN clientes c ON c.id = p.cliente_id
+
+- categoria: juncoes
+  pergunta: Quais são os nomes dos produtos da categoria Livros?
+  sql_esperada: >-
+    SELECT p.nome FROM produtos p
+    JOIN categorias c ON c.id = p.categoria_id
+    WHERE c.nome = 'Livros'
+
+# --- ordenacao ---
+- categoria: ordenacao
+  pergunta: Liste os 5 produtos mais caros, do mais caro para o mais barato.
+  sql_esperada: "SELECT nome, preco FROM produtos ORDER BY preco DESC, id LIMIT 5"
+
+- categoria: ordenacao
+  pergunta: Liste os clientes em ordem alfabética de nome.
+  sql_esperada: "SELECT nome FROM clientes ORDER BY nome"
+
+- categoria: ordenacao
+  pergunta: Quais são os 3 clientes cadastrados mais recentemente?
+  sql_esperada: "SELECT nome, data_cadastro FROM clientes ORDER BY data_cadastro DESC LIMIT 3"
+
+# --- agrupamento ---
+- categoria: agrupamento
+  pergunta: Quantos clientes existem em cada cidade?
+  sql_esperada: "SELECT cidade, COUNT(*) FROM clientes GROUP BY cidade"
+
+- categoria: agrupamento
+  pergunta: Quantos pedidos existem por status?
+  sql_esperada: "SELECT status, COUNT(*) FROM pedidos GROUP BY status"
+
+- categoria: agrupamento
+  pergunta: Quais categorias têm mais de 2 produtos? Mostre o id da categoria e a quantidade.
+  sql_esperada: >-
+    SELECT categoria_id, COUNT(*) FROM produtos
+    GROUP BY categoria_id HAVING COUNT(*) > 2

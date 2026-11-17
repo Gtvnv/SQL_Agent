@@ -1,0 +1,30 @@
+# Exemplos few-shot (no máximo 10 pares) sobre o Banco_Exemplo.
+- pergunta: Quantos clientes existem?
+  sql: SELECT COUNT(*) AS total_clientes FROM clientes
+
+- pergunta: Quais produtos custam mais de 100 reais?
+  sql: SELECT nome, preco FROM produtos WHERE preco > 100 ORDER BY preco DESC
+
+- pergunta: Quais são os clientes da cidade de Curitiba?
+  sql: SELECT id, nome FROM clientes WHERE cidade = 'Curitiba'
+
+- pergunta: Qual é o preço médio dos produtos?
+  sql: SELECT AVG(preco) AS preco_medio FROM produtos
+
+- pergunta: Liste cada produto com o nome da sua categoria.
+  sql: SELECT p.nome AS produto, c.nome AS categoria FROM produtos p JOIN categorias c ON c.id = p.categoria_id
+
+- pergunta: Quantos produtos há em cada categoria?
+  sql: SELECT c.nome AS categoria, COUNT(p.id) AS total_produtos FROM categorias c LEFT JOIN produtos p ON p.categoria_id = c.id GROUP BY c.id, c.nome ORDER BY total_produtos DESC
+
+- pergunta: Quais são os 5 produtos mais caros?
+  sql: SELECT nome, preco FROM produtos ORDER BY preco DESC LIMIT 5
+
+- pergunta: Qual é o valor total de cada pedido?
+  sql: SELECT pedido_id, SUM(quantidade * preco_unitario) AS valor_total FROM itens_pedido GROUP BY pedido_id ORDER BY pedido_id
+
+- pergunta: Quantos pedidos cada funcionário atendeu?
+  sql: SELECT f.nome AS funcionario, COUNT(pe.id) AS total_pedidos FROM funcionarios f LEFT JOIN pedidos pe ON pe.funcionario_id = f.id GROUP BY f.id, f.nome ORDER BY total_pedidos DESC
+
+- pergunta: Quais clientes fizeram pedidos em 2024?
+  sql: SELECT DISTINCT c.nome FROM clientes c JOIN pedidos pe ON pe.cliente_id = c.id WHERE pe.data_pedido >= '2024-01-01' AND pe.data_pedido < '2025-01-01'
