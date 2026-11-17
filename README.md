@@ -2,6 +2,44 @@
 
 Agente de linha de comando que recebe uma pergunta em português, gera uma consulta SQLite com um LLM, valida que ela é somente leitura, executa em uma conexão `mode=ro`, tenta se autocorrigir em caso de erro e responde com uma tabela e uma explicação em português. Toda interação é registrada em um log de auditoria.
 
+## Índice
+
+- [Início rápido](#início-rápido)
+- [Descrição do problema](#descrição-do-problema)
+- [Objetivos](#objetivos)
+- [Arquitetura](#arquitetura)
+- [Segurança em resumo](#segurança-em-resumo)
+- [Tecnologias](#tecnologias)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Execução](#execução)
+- [Exemplos de uso](#exemplos-de-uso)
+- [Estrutura do projeto](#estrutura-do-projeto)
+- [Testes](#testes)
+- [Resultados da avaliação](#resultados-da-avaliação)
+- [Limitações conhecidas](#limitações-conhecidas)
+
+## Início rápido
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env        # preencha LLM_API_KEY e LLM_MODEL
+python db/create_db.py      # cria o banco de exemplo (db/loja.sqlite)
+python -m sql_agent         # digite uma pergunta; "sair" encerra
+```
+
+Exemplo de sessão (a SQL e a explicação variam conforme o modelo):
+
+```text
+> Quantos clientes existem?
+SQL gerada: SELECT COUNT(*) AS total_clientes FROM clientes
++------------------+
+|   total_clientes |
++==================+
+|               15 |
++------------------+
+Explicação: A consulta conta os clientes cadastrados. Retornou 1 linha.
+```
 ## Descrição do problema
 
 Responder perguntas sobre dados em um banco relacional exige conhecer SQL e o esquema do banco. Pessoas de negócio dependem de quem sabe escrever as consultas, e entregar a um LLM o poder de gerar SQL livremente traz riscos: a consulta pode apagar ou alterar dados, referenciar tabelas inexistentes, devolver volumes enormes de linhas ou demorar demais. Este projeto resolve a pergunta "como consultar dados em linguagem natural sem abrir mão de segurança e de rastreabilidade?" usando um banco de exemplo de uma loja.
@@ -35,6 +73,17 @@ Documentação detalhada em `/docs`:
 - [Esquema do Banco_Exemplo](docs/esquema-do-banco.md)
 - [Decisões de segurança](docs/decisoes-de-seguranca.md)
 
+## Segurança em resumo
+
+O agente nunca confia na SQL que o LLM devolve. Cada consulta passa por camadas independentes:
+
+1. **Validador de SQL (`sqlglot`)**: só aceita uma instrução `SELECT` ou `WITH ... SELECT`. Rejeita `INSERT`, `UPDATE`, `DELETE`, `DROP` e similares, além de tabelas e colunas que não existem no esquema.
+2. **Conexão somente leitura**: o executor abre o SQLite com `mode=ro`. Mesmo que o validador falhe, o banco não pode ser alterado.
+3. **Limites**: máximo de linhas exibidas e tempo limite por consulta.
+4. **Chave de API protegida**: fica no `.env` (ignorado pelo git) e é mascarada em mensagens e no log de auditoria.
+5. **Auditoria**: toda pergunta gera um registro em `audit.jsonl`.
+
+Detalhes em [docs/decisoes-de-seguranca.md](docs/decisoes-de-seguranca.md).
 ## Tecnologias
 
 | Tecnologia | Uso |
@@ -237,6 +286,36 @@ instrução de escrita ou definição não permitida: DROP
 
 A CLI exibe a SQL e a mensagem `Consulta reprovada pelo validador: instrução de escrita ou definição não permitida: DROP`. Nenhuma tentativa de autocorreção é feita e o banco não é tocado.
 
+## Estrutura do projeto
+
+```text
+SQL_Agent/
+├── sql_agent/            # pacote principal
+│   ├── cli.py            # interface de linha de comando
+│   ├── agent.py          # orquestra gerar, validar, executar, corrigir, explicar, auditar
+│   ├── generator.py      # prompt e extração da SQL
+│   ├── validator.py      # validação com sqlglot
+│   ├── executor.py       # execução somente leitura
+│   ├── explainer.py      # explicação em português
+│   ├── audit.py          # log de auditoria (JSON Lines)
+│   ├── schema.py         # extração do esquema do banco
+│   ├── config.py         # configuração e mascaramento da chave
+│   ├── llm.py            # cliente do LLM
+│   └── evaluation.py     # avaliação de qualidade
+├── db/                   # criação do banco, descrições e exemplos few-shot
+├── eval/dataset.yaml     # conjunto de avaliação (17 pares)
+├── docs/                 # documentação detalhada
+├── tests/                # testes de exemplo e de propriedade
+└── images/               # capturas de tela usadas no README
+```
+
+## Testes
+
+```bash
+pytest
+```
+
+A suíte combina testes de exemplo e testes de propriedade (`hypothesis`) e usa um cliente LLM falso, então não acessa a rede nem consome a API. Os testes de propriedade são lentos: a primeira importação do `sqlglot` e as 100 execuções por propriedade levam alguns minutos.
 ## Resultados da avaliação
 
 O conjunto `eval/dataset.yaml` tem 17 pares `{pergunta, sql_esperada, categoria}` (filtros, agregações, junções, ordenação e agrupamento). Um par acerta quando o resultado da SQL gerada é igual ao da SQL esperada: como multiconjunto de linhas quando a esperada não tem `ORDER BY`, e na mesma ordem quando tem.
